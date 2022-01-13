@@ -1,0 +1,13 @@
+.section-about {
+  background-color: $color-gray;
+  padding: 40rem 0;
+  margin-top: -10%;
+
+  .heading-secondary {
+    transition: all 0.3s linear;
+    &:hover {
+      transform: skewY(-3deg) scale(1.1);
+      text-shadow: 0 0 0 0.5rem $color-primary-dark;
+    }
+  }
+}

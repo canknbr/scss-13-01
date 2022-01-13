@@ -25,4 +25,8 @@
   &--animated {
     animation: moveUp 0.5s linear;
   }
+  &-text {
+    border-bottom: 1px solid $color-black;
+    color: $color-black;
+  }
 }

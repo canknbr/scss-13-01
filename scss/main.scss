@@ -10,9 +10,11 @@
 
 //components
 @import 'components/buttons';
+@import 'components/composition';
 
 //layout
 @import 'layout/grid';
 @import 'layout/header';
 
 //pages
+@import 'pages/home';
