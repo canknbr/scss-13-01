@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'Nunito Sans', 'Lato', sans-serif;
+  line-height: 1.6;
+  padding: 30px; }
+
+.header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 54, 55, 0.5), rgba(98, 179, 170, 0.1)), url("../img/hiking.jpeg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 20px; }
+  .header__logo {
+    width: 50px;
+    height: 50px; }
+  .header__text_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.heading-primary {
+  color: white;
+  margin-bottom: 40px;
+  letter-spacing: 2px; }
+  .heading-primary--top {
+    font-size: 68px;
+    display: block;
+    font-weight: 700;
+    animation: moveRight 0.5s linear;
+    transition: all 0.5s linear; }
+  .heading-primary--sub {
+    font-size: 28px;
+    display: block;
+    font-weight: 700;
+    animation: moveLeft 0.5s linear;
+    transition: all 0.5s linear; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s linear; }
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.btn:active {
+  transform: translateY(3px) scale(0.97); }
+
+.btn--white {
+  background-color: white;
+  color: black; }
+
+.btn--animated {
+  animation: moveUp 0.5s linear; }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  60% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
