@@ -1,0 +1,22 @@
+.feature-box {
+  padding: 2.5rem;
+  box-shadow: 0 0.5rem 1rem rgba($color-gray, 0.25);
+  text-align: center;
+  background-color: $color-white;
+
+  &__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-main, 0.5),
+      rgba($color-secondary, 0.1)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &__text {
+    color: rgba($color-main, 0.95);
+    line-height: 1.3;
+  }
+}
